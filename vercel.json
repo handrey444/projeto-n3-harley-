@@ -1,4 +1,10 @@
 {
+    
+  "builds": [
+    {
+      "src": "back-end/index.js",
+      "use": "@vercel/node"
+    }],
   "rewrites": [
     { "source": "/(.*)\\.js", "destination": "/front-end/$1.js" },
     { "source": "/(.*)\\.css", "destination": "/front-end/$1.css" },
