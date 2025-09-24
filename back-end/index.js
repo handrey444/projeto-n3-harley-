@@ -11,7 +11,7 @@ app.use(cors());
 
 
 
-
+app.use('/clima', router);
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'front-end', 'index.html'));
 });
