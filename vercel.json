@@ -6,7 +6,7 @@
       "use": "@vercel/node"
     }],
   "rewrites": [
-    { "source": "/", "destination": "/front-end/index.html" },
+    { "source": "/", "destination": "/front-end/$1" },
     { "source": "/clima/(.*)", "destination": "/back-end/index.js" }
   ]
 }
