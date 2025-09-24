@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Dados do ESP32</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Dados em tempo real</h1>
+        <div class="data-display">
+            <p>Temperatura: <span id="current-temp">--</span> °C</p>
+            <p>Umidade: <span id="current-humid">--</span> %</p>
+        </div>
+
+        <hr>
+
+        <h2>Histórico de Leituras</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Temperatura (°C)</th>
+                        <th>Umidade (%)</th>
+                        <th>Data/Hora</th>
+                    </tr>
+                </thead>
+                <tbody id="history-table-body">
+                </tbody>
+            </table>
+        </div>
+        <div class="pagination">
+            <button id="prev-btn">Anterior</button>
+            <span id="page-info">Página 1 de 1</span>
+            <button id="next-btn">Próxima</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
