@@ -1,4 +1,4 @@
-const API_URL = window.location.origin;
+
 
 let dadosCompletos = [];
 const itensPorPagina = 10;
@@ -7,7 +7,7 @@ let totalPaginas = 1;
 
 async function fetchData() {
     try {
-        const response = await fetch(`${API_URL}/historico`);
+        const response = await fetch(`https://projeto-n3-harley-bdcm.vercel.app/clima/historico`);
         const data = await response.json();
 
         if (Array.isArray(data)) {
