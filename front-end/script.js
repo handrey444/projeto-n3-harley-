@@ -1,17 +1,13 @@
 
 
-let dadosCompletos = [];
-const itensPorPagina = 10;
-let paginaAtual = 1;
-let totalPaginas = 1;
 
 async function fetchData() {
     try {
-        const response = await fetch(`https://projeto-n3-harley-bdcm.vercel.app/clima/historico`);
+        const response = await fetch(`https://projeto-n3-harley-bdcm.vercel.app/clima/dados`);
         const data = await response.json();
 
         if (Array.isArray(data)) {
-            dadosCompletos = data.reverse(); 
+            
            
             renderPagina();
         } else {
@@ -30,8 +26,8 @@ function renderPagina() {
     const tableBodyEl = document.getElementById('history-table-body');
     tableBodyEl.innerHTML = '';
 
-    if (dadosDaPagina.length > 0) {
-        dadosDaPagina.forEach(item => {
+    if (data.length > 0) {
+        data.forEach(item => {
             const row = document.createElement('tr');
            
             row.innerHTML = `
