@@ -67,32 +67,3 @@ tr:hover {
     background-color: #f9f9f9;
 }
 
-.pagination {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.pagination button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.pagination button:hover {
-    background-color: #0056b3;
-}
-
-.pagination button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
-
-.pagination span {
-    font-weight: bold;
-    color: #333;
-}
