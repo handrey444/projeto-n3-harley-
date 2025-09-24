@@ -9,7 +9,7 @@
   "rewrites": [
     { "source": "/(.*)\\.js", "destination": "/front-end/$1.js" },
     { "source": "/(.*)\\.css", "destination": "/front-end/$1.css" },
-    { "source": "/clima/(.*)", "destination": "/back-end/index.js" }
+    { "source": "/", "destination": "/front-end/index.html" }
   ]
 
 }
