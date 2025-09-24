@@ -9,7 +9,7 @@ async function fetchData() {
         if (Array.isArray(data)) {
             
            
-            renderPagina();
+            renderPagina(data);
         } else {
             console.error('Os dados recebidos não são um array:', data);
         }
@@ -18,7 +18,7 @@ async function fetchData() {
     }
 }
 
-function renderPagina() {
+function renderPagina(data) {
 
    
    
