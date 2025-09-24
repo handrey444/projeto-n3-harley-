@@ -3,7 +3,7 @@
 
 async function fetchData() {
     try {
-        const response = await fetch(`https://projeto-n3-harley-bdcm.vercel.app/clima/dados`);
+        const response = await fetch(`https://projeto-n3-harley-bdcm.vercel.app/clima/hisorico`);
         const data = await response.json();
 
         if (Array.isArray(data)) {
