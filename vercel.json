@@ -1,22 +1,14 @@
 {
   "builds": [
     {
-      "src": "back-end/index.js",
+      "src": "/front-end/index.html",
       "use": "@vercel/node"
     }
   ],
   "rewrites": [
     {
-      "source": "/dados",
-      "destination": "/back-end/index.js"
-    },
-    {
-      "source": "/historico",
-      "destination": "/back-end/index.js"
-    },
-    {
       "source": "/(.*)",
-      "destination": "/front-end/$1"
+      "destination": "/back-end/index.js"
     }
   ]
 }
