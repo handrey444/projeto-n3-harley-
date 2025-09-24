@@ -2,7 +2,6 @@
   "rewrites": [
     { "source": "/(.*)\\.js", "destination": "/front-end/$1.js" },
     { "source": "/(.*)\\.css", "destination": "/front-end/$1.css" },
-    { "source": "/", "destination": "/front-end/index.html" },
-   
+    { "source": "/", "destination": "/front-end/index.html" }
   ]
 }
