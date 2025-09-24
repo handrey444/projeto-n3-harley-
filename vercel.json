@@ -4,11 +4,13 @@
       "src": "back-end/index.js",
       "use": "@vercel/node"
     }
-  ],
+  ],    
+ 
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/back-end/index.js"
-    }
+    { "source": "/(.*)\\.js", "destination": "/front-end/$1.js" },
+    { "source": "/(.*)\\.css", "destination": "/front-end/$1.css" },
+    { "source": "/", "destination": "/front-end/index.html" },
+    { "source": "/clima/(.*)", "destination": "/back-end/index.js" }
   ]
+
 }
